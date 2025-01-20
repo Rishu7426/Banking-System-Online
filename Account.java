@@ -1,13 +1,13 @@
 /******************************************************************************
-*	Program Author: Kavita Mishra for CSCI 6810 Java and the Internet	  *
-*	Date: September, 2018													  *
+*	Program Author: Rishu Raj      *
+*	Date: November, 2024												      *
 *******************************************************************************/
 
-package com.mishra;
+package com.rishu;
 
-import java.lang.*; //including Java packages used by this program
+import java.lang.*; //including all Java packages used in this program
 import java.sql.*;
-import com.mishra.*;
+import com.rishu.*;
 
 public class Account
 {
@@ -61,6 +61,7 @@ public class Account
 	    }
 	    return done;
 	}
+  
   public String signIn()
   {
 		boolean done = !Username.equals("") && !Password.equals("");
