@@ -65,7 +65,7 @@ public class SignUpServlet extends HttpServlet {
 		Buf.append("<HTML><HEAD></HEAD>\n");
 		Buf.append("<BODY bgcolor='#F1F1FD'>\n");
 		Buf.append("<h4 ALIGN='center'>Congratulations! You have an account with us. Thank you! You can login now.</h4>\n");
-			Buf.append("<FORM NAME=\"LoginPage\" ACTION=\"/LoginSrvlet\" METHOD =\"POST\">\n");
+			Buf.append("<FORM NAME=\"LoginPage\" ACTION=\"LoginSrvlet\" METHOD =\"POST\">\n");
 
 			   Buf.append("<TABLE cellPadding='3' ALIGN='center'>\n");
 					Buf.append("<TR bgcolor='#ECFAEB'>\n");
