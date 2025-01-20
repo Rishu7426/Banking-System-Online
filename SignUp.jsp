@@ -1,6 +1,6 @@
 <!--
 /******************************************************************************
-*	Program Author: Dr. Yongming Tang for CSCI 6810 Java and the Internet *
+*	Program Author: Rishu Raj                                             *
 *	Date: September, 2012						      *
 *******************************************************************************/
 -->
@@ -8,7 +8,7 @@
 <%@ page import="java.io.*" %>
 <%@ page import="java.util.*" %>
 <%@ page import="java.lang.*" %>
-<%@ page import="com.mishra.*;" %>
+<%@ page import="com.rishu.*;" %>
 
 <%
 	String Username = new String("");
