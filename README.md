@@ -1,17 +1,18 @@
 This project was part of a Java programming course, where I developed an online banking system based on the use cases provided by the instructor. The objective was to implement functionalities for managing customer accounts and transactions.
 
-Key Features Developed:
+**Key Features Developed:**
 Account Creation:
 Customers could open either a Checking Account or a Savings Account, or both. This required:
 
-Designing database tables:
+**Designing database tables:**
 CheckingAccount(CheckingAccountNumber, CustomerName, Balance, CustomerID)
 SavingsAccount(SavingsAccountNumber, CustomerName, Balance, InterestRate, CustomerID)
 Transactions(TransactionNumber, TransactionAmount, TransactionType, TransactionTime, TransactionDate, FromAccount, ToAccount, CustomerID)
-Data types:
+**Data types:**
 Non-numerical values (e.g., AccountNumber, TransactionNumber) were stored as varchar(50).
 Numerical values (e.g., Balance, InterestRate) were stored as float.
-Creating entity classes:
+
+**Creating entity classes:**
 SavingsAccount.java and Transaction.java were built to complement the existing CheckingAccount.java.
 A method was added in Transaction.java to record transaction details.
 Account Management:
