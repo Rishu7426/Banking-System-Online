@@ -1,13 +1,13 @@
 /******************************************************************************
-*	Program Author: Dr. Yongming Tang for CSCI 6810 Java and the Internet	  *
-*	Date: September, 2012													  *
+*	Program Author: Rishu Raj	  *
+*	Date: September, 2024													  *
 *******************************************************************************/
 
 import java.io.*;
 import javax.servlet.*;  //package for GenericServlet
 import javax.servlet.http.*;  //package for HttpServlet
 import java.util.*;
-import com.mishra.*;
+import com.rishu.*;
 
 public class LoginServlet extends HttpServlet {
    private String Username, Password;
@@ -51,7 +51,7 @@ public class LoginServlet extends HttpServlet {
           //showSuccess();
           req.setAttribute("Username", Username);
 		  req.setAttribute("CustomerName", CustomerName);
-		  req.getRequestDispatcher("/CSCI6810/afterlogin.jsp").forward(req, res);
+		  req.getRequestDispatcher("afterlogin.jsp").forward(req, res);
       }else
            output.println("login failed");
    }
@@ -59,6 +59,7 @@ public class LoginServlet extends HttpServlet {
 
    //this "cleanup" method is called when a servlet is terminated by the server
    public void destroy() {
+	   System.out.println("Closing....");
        output.close();
    }
 }
