@@ -1,7 +1,7 @@
 <%@ page import="java.io.*" %>
 <%@ page import="java.util.*" %>
 <%@ page import="java.lang.*" %>
-<%@ page import="com.mishra.*;" %>
+<%@ page import="com.rishu.*;" %>
 
 <%
 	String Username = new String("");
@@ -26,13 +26,13 @@
 <TR bgcolor='#ECFAEB'>
 <div id='navigation'>
 <ul>
-<li><A HREF='/CSCI6810/AccountOverview.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Account Overview</A></li>
-<li><A HREF='/CSCI6810/PreOpenBankAccount.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Open Bank Account</A></li>
-<li><A HREF='/CSCI6810/PreWithdraw.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Withdraw</A></li>
-<li><A HREF='/CSCI6810/PreDeposit.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Deposit</A></li>
-<li><A HREF='/CSCI6810/PreTransfer.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Transfer</A></li>
-<li><A HREF='/CSCI6810/InquireTransactions.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Inquire Transaction</A></li>
-<li><A HREF='/CSCI6810/' TARGET='display'>Logout</A></li>
+<li><A HREF='AccountOverview.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Account Overview</A></li>
+<li><A HREF='PreOpenBankAccount.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Open Bank Account</A></li>
+<li><A HREF='PreWithdraw.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Withdraw</A></li>
+<li><A HREF='PreDeposit.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Deposit</A></li>
+<li><A HREF='PreTransfer.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Transfer</A></li>
+<li><A HREF='InquireTransactions.jsp?UserID=<%=Username%>&CustomerName=<%=Name%>' TARGET='display'>Inquire Transaction</A></li>
+<li><A HREF='' TARGET='display'>Logout</A></li>
 </ul>
 </div>
 </TR>
