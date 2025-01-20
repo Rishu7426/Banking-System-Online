@@ -1,13 +1,13 @@
 <!--
 /******************************************************************************
-*	Program Author: Dr. Yongming Tang for CSCI 6810 Java and the Internet	  *
-*	Date: September, 2012													  *
+*	Program Author: Rishu Raj	  *
+*	Date: September, 2024													  *
 *******************************************************************************/
 -->
 
 <HTML><HEAD></HEAD>
 <BODY>
-    <FORM NAME="OpenBankAccountForm" ACTION="/CSCI6810/OpenBankAccount.jsp" METHOD ="POST">
+    <FORM NAME="OpenBankAccountForm" ACTION="OpenBankAccount.jsp" METHOD ="POST">
         <INPUT TYPE='hidden' NAME='UserID' VALUE='<%=request.getParameter("UserID")%>'>
 
         <TABLE cellPadding=3 ALIGN='center'>
