@@ -1,14 +1,39 @@
-# Online-Banking-System-using-Java
-This was a project in my Java class where I had to develop an online banking system with the use cases provided by the professor.
+This project was part of a Java programming course, where I developed an online banking system based on the use cases provided by the instructor. The objective was to implement functionalities for managing customer accounts and transactions.
 
-Based on the use case, I had to do the following so that a customer can open a checking account and/or a savings account.
-1.	Create tables CheckingAccount(CheckingAccountNumber, CustomerName, Balance, CustomerID), SavingsAccount(SavingsAccountNumber, CustomerName, Balance, InterestRate, CustomerID), Transactions(TransactionNumber, TransactionAmount, TransactionType, TransactionTime, TransactionDate, FromAccount, ToAccount, CustomerID). Use varchar(50) for any non-numerical value including AccountNumber and TransactionNumber, and float for any numerical value. CustomerID here means Username.
-2.	Study entity class CheckingAccount.java, and then develop your entity classes SavingsAccount.java and Transaction.java that has a method for recording a transaction.
-3.	Add necessary statements to OpenBankAccountControl.java to open both Checking and Savings accounts, and record the transactions of opening deposits.
+Key Features Developed:
+Account Creation:
+Customers could open either a Checking Account or a Savings Account, or both. This required:
 
- In continuation to the above, had to do then do the following:
- 
-Develop use cases of Account Overview, Inquire Transactions, Deposit, and Withdraw by using the services from your bank as examples. And develop your Java programs to fully implement the functionalities with access to database. Assume that a customer has two accounts, Savings Account and Checking Account. Account Overview shows the current balances of customers’ Savings Account and Checking Account. Inquire Transactions allow customers to search specific transactions by entering a starting date and ending date.
-1.	Develop methods deposit(), withdraw() in your classes CheckingAccount and SavingsAccount, getBalance() and calculateInterests() in class SavingsAccount,  searchTransaction() in class Transactions. Then implement Transfer, Deposit, and Withdraw functionalities. It means that your program shows Transfer, Deposit, or Withdraw after successful login. Your current program is to show Open Bank Account window after successful login. Modifications are necessary. 
-2.	Organize these functionalities as tabs in one window. The default tab is Account Overview. Please combine Open Account into this application.  Show the window after successful login. These tabs must be in your window, Account Overview, Open Account, Deposit, Withdraw, Transfer and Inquire Transactions subtabs.
- 
+Designing database tables:
+CheckingAccount(CheckingAccountNumber, CustomerName, Balance, CustomerID)
+SavingsAccount(SavingsAccountNumber, CustomerName, Balance, InterestRate, CustomerID)
+Transactions(TransactionNumber, TransactionAmount, TransactionType, TransactionTime, TransactionDate, FromAccount, ToAccount, CustomerID)
+Data types:
+Non-numerical values (e.g., AccountNumber, TransactionNumber) were stored as varchar(50).
+Numerical values (e.g., Balance, InterestRate) were stored as float.
+Creating entity classes:
+SavingsAccount.java and Transaction.java were built to complement the existing CheckingAccount.java.
+A method was added in Transaction.java to record transaction details.
+Account Management:
+
+Modified OpenBankAccountControl.java to support opening both types of accounts and recording the transactions for initial deposits.
+Use Case Development:
+Designed and implemented the following use cases:
+
+Account Overview: Displays the current balances for both Savings and Checking accounts.
+Inquire Transactions: Allows customers to search for specific transactions by specifying a date range.
+Deposit and Withdraw: Customers can deposit or withdraw money from their accounts.
+Key Functionalities and Methods:
+
+Developed methods such as:
+deposit() and withdraw() in both CheckingAccount and SavingsAccount.
+getBalance() and calculateInterests() in SavingsAccount.
+searchTransaction() in Transaction for querying transactions.
+Implemented Transfer, Deposit, and Withdraw functionalities, enabling seamless fund management after user authentication.
+User Interface:
+
+Integrated all functionalities into a single window with multiple tabs:
+Default Tab: Account Overview
+Additional Tabs: Open Account, Deposit, Withdraw, Transfer, and Inquire Transactions.
+Modified the program to show this tabbed interface upon successful login.
+This project emphasized the integration of object-oriented programming principles, database connectivity, and a user-friendly interface, providing a robust foundation for online banking system design.
