@@ -1,7 +1,7 @@
 <!--
 /******************************************************************************
-*	Program Author: Kavita for CSCI 6810 Java and the Internet	  *
-*	Date: November, 2018													  *
+*	Program Author: Rishu Raj	  *
+*	Date: November, 2024													  *
 *******************************************************************************/
 -->
 <%@ page import="java.io.*" %>
@@ -14,17 +14,17 @@ String UName = new String("");
 	UName = request.getParameter( "UserID" );
 	//out.println("Your username is " + UName);
 			
-	String Name = new String("");
-	Name = request.getParameter("CustomerName");
+String Name = new String("");
+Name = request.getParameter("CustomerName");
 	//out.println("Your customername is " + Name);
 	
 	
-	CheckingAccount ca;
-	SavingsAccount sa;
-	ca = new CheckingAccount();
-	ca.getAccountInfo(UName);
-	sa = new SavingsAccount();
-        sa.getAccountInfo(UName);
+CheckingAccount ca;
+SavingsAccount sa;
+ca = new CheckingAccount();
+ca.getAccountInfo(UName);
+sa = new SavingsAccount();
+sa.getAccountInfo(UName);
 	
 %>
 
