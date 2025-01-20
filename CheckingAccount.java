@@ -1,12 +1,12 @@
 /******************************************************************************
-*	Program Author: Dr. Yongming Tang for CSCI 6810 Java and the Internet	  *
-*	Date: October, 2013													      *
+*	Program Author: Rishu Raj	  *
+*	Date: November, 2024														      *
 *******************************************************************************/
-package com.mishra;
+package com.rishu;
 
 import java.lang.*; //including Java packages used by this program
 import java.sql.*;
-import com.mishra.*;
+import com.rishu.*;
 
 public class CheckingAccount
 {   //Instance Variables
