@@ -1,9 +1,9 @@
 /******************************************************************************
-*	Program Author: Dr. Yongming Tang for CSCI 6810 Java and the Internet	  *
-*	Date: September, 2012													  *
+*	Program Author: Rishu raj	  *
+*	Date: September, 2024													  *
 *******************************************************************************/
 
-package com.mishra;
+package com.rishu;
 
 import java.util.*;
 import java.sql.*;
